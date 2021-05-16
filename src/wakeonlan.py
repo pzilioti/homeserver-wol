@@ -1,5 +1,3 @@
-import socket
-import struct
 import configparser
 import subprocess
 

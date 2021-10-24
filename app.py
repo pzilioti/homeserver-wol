@@ -1,5 +1,4 @@
-from flask import Flask
-from flask import Response
+from flask import Flask, make_response , Response
 from src.wakeonlan import wakeonlan
 
 
@@ -14,7 +13,7 @@ def wake(target):
 
 @app.route('/ping', methods=['GET'])
 def ping():
-	response = Flask.make_response("OK", 200)
+	response = make_response("OK", 200)
 	response.mimetype = "text/plain"
 	return response
     

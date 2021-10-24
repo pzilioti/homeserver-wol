@@ -13,7 +13,7 @@ def wake(target):
     
 
 @app.route('/ping', methods=['GET'])
-def ping(target):
+def ping():
 	response = Flask.make_response("OK", 200)
 	response.mimetype = "text/plain"
 	return response
